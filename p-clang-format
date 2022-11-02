@@ -3,7 +3,7 @@
 # MIT License
 
 # Turn on this to replace any pragma
-#REPLACE_ANY_PRAGMA=1
+REPLACE_ANY_PRAGMA=1
 
 function replace_all()
 {
