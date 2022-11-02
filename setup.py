@@ -4,7 +4,8 @@ from setuptools import setup
 
 
 setup(
-    name='pre_commit_placeholder_package',
-    version='0.0.0',
+    name='p-clang-format',
+    version='1.0.1',
     install_requires=['clang-format==14.0.6'],
+    scripts=['p-clang-format']
 )
