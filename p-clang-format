@@ -20,7 +20,7 @@ function replace_all()
         [[ ! -r "$file_path" ]] && continue
         for w in "${keywords[@]}"; do
             # echo "Replace '${prefix}$w' in '$file_path'"
-            sed -i.bak "s/${prefix}${pattern}${w}/${prefix}${w}/g" "${file_path}"
+            sed -i.bak "s/${prefix}${w}/${pattern}${prefix}${w}/g" "${file_path}"
         done
     done
 }
