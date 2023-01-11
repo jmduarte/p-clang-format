@@ -39,7 +39,7 @@ function re_replace_all()
     for file_path in "${file_pathes[@]}"; do
         [[ ! -r "$file_path" ]] && continue
         for w in "${keywords[@]}"; do
-            # echo "Re:replace '${prefix}$w' in '$file_path'"           
+            # echo "Re:replace '${prefix}$w' in '$file_path'"
             sed -i.bak "s/${pattern}${prefix}${w}/${prefix}${w}/g" "${file_path}"
         done
     done
